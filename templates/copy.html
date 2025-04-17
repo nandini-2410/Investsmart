@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SIP Calculator</h2>
+        <label for="monthlyInvestment">Monthly Investment (₹):</label>
+        <input type="number" id="monthlyInvestment" placeholder="Enter amount" required>
+        
+        <label for="annualReturn">Expected Annual Return (%):</label>
+        <input type="number" id="annualReturn" placeholder="Enter rate" required>
+        
+        <label for="years">Investment Duration (Years):</label>
+        <input type="number" id="years" placeholder="Enter years" required>
+        
+        <button onclick="calculateSIP()">Calculate</button>
+        
+        <h3>Future Value: ₹<span id="result">0</span></h3>
+    </div>
+
+    <script>
+        function calculateSIP() {
+            let monthlyInvestment = parseFloat(document.getElementById("monthlyInvestment").value);
+            let annualReturn = parseFloat(document.getElementById("annualReturn").value);
+            let years = parseFloat(document.getElementById("years").value);
+            
+            let monthlyRate = (annualReturn / 100) / 12;
+            let months = years * 12;
+            
+            let futureValue = monthlyInvestment * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate);
+            
+            document.getElementById("result").innerText = futureValue.toFixed(2);
+        }
+    </script>
+</body>
+</html>

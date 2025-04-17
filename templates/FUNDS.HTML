@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    
+<style>
+    .logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+.menu {
+   
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   font-size: 20px;
+   margin-left: 45px;
+}
+
+.menu ul {
+   margin: 10px 10px 0px 60px;
+   padding: 0;
+   list-style: 2;
+   display: flex;
+   justify-content: center;
+}
+
+.menu ul li {
+   display: inline;
+}
+
+.menu ul li a {
+   display: block;
+   padding: 18px 30px;
+   text-align: center;
+   text-decoration: underline;
+   color: black;
+   font-size: 30;
+
+}
+.smooth{
+    font-size: 25px;
+    margin-left: 450px;
+    
+}
+.form{
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: 10px;
+}
+.box{
+    padding: 20px;
+    font-size: 23px;
+    margin-left: 300px;
+}
+.box input{
+    width: 25%;
+    height: 20px;
+}
+.comb{
+    background-image: url('https://ralainvestments.com/wp-content/uploads/2020/01/Shutterstock-365284043-470963-e1580235632282.png');
+}
+.logo-container{
+    color:white;
+}
+.add input{
+    width: 60%;
+}
+.buttin {
+    background-color: transparent; /* Remove any background color */
+    color: black; /* Set the text color */
+    font-size: 22px; /* Font size of the button text */
+    padding: 5px; /* Add padding for better button appearance */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: none; /* Remove border radius */
+    font-weight: bold; /* Make the font bold */
+    text-decoration: underline;
+}
+
+/* Remove background color and text color change on hover */
+.buttin:hover {
+    color: black; /* Keep text color black on hover */
+    background-color: transparent; /* Ensure no background color change */
+}
+.calculate{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    font-size: 25px;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    padding: 20px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.calculators {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+    background-color: white;
+    padding: 10px;
+    max-lines: 20px;
+    transition: all 1s ease-in 0.25;
+}
+.calculators:hover{
+    transform:scale(1.05);
+}
+#calci{
+    background-color:rgb(252, 117, 39);
+}
+.button{
+    background-color: rgb(252,117,39);
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button:hover{
+    transform:scale(1.05); 
+}
+.hello{
+    justify-content: center;
+    justify-items: center;
+}
+.footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .footer ul li {
+            margin: 0 15px;
+        }
+        .footer ul li a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+</style>
+<div class="comb">
+<div class="logo-container">
+    <img src="https://cdn-icons-png.flaticon.com/128/5501/5501360.png" width=3%  >
+    <h1>InvestSmart</h1>
+    </div>
+    
+    <div class="menu">
+        <B>
+        <ul>
+            <li><a href="/"><button class="buttin">HOME</button></a></li>
+            <li><a href="/invest"><button class="buttin">INVEST</button></a></li>
+            <li><a href="/scheme"><button class="buttin">SCHEMES</button></a></li>
+            <li><a href="/calculator"><button class="buttin">TOOLS AND CALCULATONS</button></a></li>
+        </ul>
+        </B>
+    </div>
+</div><br>
+<div class="calculate"> Calculate The Return Funds According to Funds<br> Invest In Schemes</div><br>
+
+<section id="calci" class="calculator">
+
+
+<div class="calculators">
+    <b><div>EQUITY FUND </div></b><br>
+    <div>  Some funds are :<br>
+    <img src ="https://www.flaticon.com/free-icon/right-arrow_724954">SBI Bluechip Fund<br>
+    <img src ="https://www.flaticon.com/free-icon/dot_8265301">HDFC Small Cap Fund<br>
+    </div>
+    <br><br><br>
+    <div class="hello"><a href="/sip"><button class="button">CALCULATE</button></a></div>
+</div>
+<div class="calculators">
+    <b><div>DEBIT FUND</div></b><br>
+    <div>  Some funds are :<br>
+        <img src ="https://www.flaticon.com/free-icon/right-arrow_724954">ICICI Prudential Corporate Bond Fund<br>
+        <img src ="https://www.flaticon.com/free-icon/dot_8265301">Aditya Birla Sun Life Medium Term Plan<br>
+        </div><br>
+    <div class="hello"><button class="button">CALCULATE</button></div>
+</div>
+<div class="calculators">
+    <b><div>HYBRID FUND</div></b><br>
+    <div> Some funds are :<br>
+        <img src ="https://www.flaticon.com/free-icon/right-arrow_724954">HDFC Hybrid Equity Fund<br>
+        <img src ="https://www.flaticon.com/free-icon/dot_8265301">SBI Equity Hybrid Fund<br>
+        </div><br><br><br>
+    <div class="hello"><button class="button">CALCULATE</button></div>
+</div>
+<div class="calculators">
+    <b><div>ELSS Fund</div></b><br>
+    <div>  Some funds are :<br>
+        <img src ="https://www.flaticon.com/free-icon/right-arrow_724954">HDFC Hybrid Equity Fund<br>
+        <img src ="https://www.flaticon.com/free-icon/dot_8265301">SBI Equity Hybrid Fund<br>
+        </div><br><br>
+    <div class="hello"><button class="button">CALCULATE</button></div>
+</div>
+<div class="calculators">
+    <b><div> Solution-Oriented Funds</div></b><br>
+    <div> Some funds are :<br>
+        <img src ="https://www.flaticon.com/free-icon/right-arrow_724954">HDFC Children’s Gift Fund<br>
+        <img src ="https://www.flaticon.com/free-icon/dot_8265301">ICICI Prudential Retirement Fund<br>
+        </div><br>
+    <div class="hello"><button class="button">CALCULATE</button></div>
+</div>
+<!-- <div class="calculators">
+    <b><div>HYBRID FUND</div></b><br>
+    <div> Content :<br>
+        <img src ="https://www.flaticon.com/free-icon/right-arrow_724954">HDFC Hybrid Equity Fund<br>
+        <img src ="https://www.flaticon.com/free-icon/dot_8265301">SBI Equity Hybrid Fund<br>
+        </div>
+    <div class="hello"><button class="button">CALCULATE</button></div>
+</div> -->
+</section>
+<br>
+<section class="faq-section">
+    <h2>1.Equity Mutual Funds - FAQs</h2>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q1. What is an Equity Mutual Fund?</p>
+        <p class="faq-answer">An equity mutual fund is a type of mutual fund scheme that invests more than 60% of its assets in equity stocks. While a small portion may be allocated to debt and other instruments, the primary focus is on equities—hence the name Equity Mutual Fund.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q2. Are Equity Mutual Funds Risky?</p>
+        <p class="faq-answer">Yes, equity mutual funds are among the riskiest investment options in the mutual fund landscape. However, they also offer a high risk-return ratio, meaning that while they have the potential for high returns, they are also subject to significant market fluctuations.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q3. Who Should Invest in Equity Mutual Funds?</p>
+        <p class="faq-answer">Equity mutual funds are best suited for:<br>
+        ✔ Investors with a high-risk appetite<br>
+        ✔ Experienced investors familiar with market volatility<br>
+        ✔ Those seeking portfolio diversification<br>
+        ✔ Investors willing to stay invested for the long term</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q4. Can I Invest in Equity Mutual Funds with a Low-Risk Appetite?</p>
+        <p class="faq-answer">Since equity mutual funds primarily invest in stocks, they carry high market risk. If you have a low-risk tolerance, it is advisable to explore debt funds or hybrid funds instead.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q5. What is the Ideal Investment Horizon for Equity Mutual Funds?</p>
+        <p class="faq-answer">Equity mutual funds tend to perform well over the long term. To maximize potential returns, it is recommended to stay invested for a period of 3 to 7 years or more.</p>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2>2.Debt Mutual Funds - FAQs</h2>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q1. Is a debt fund beneficial or detrimental?</p>
+        <p class="faq-answer">Individual financial goals and risk preferences influence whether something is good or not. It is an excellent choice for investors wanting stability, consistent income, and lower risk. However, if an investor wishes to take on more risk while earning larger returns, it is not a smart alternative because it provides lesser returns than equities.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q2. How do debt funds operate?</p>
+        <p class="faq-answer">Debt funds invest in fixed-income assets such as corporate and government bonds and other debt instruments. It profits from the interest and price appreciation of the debt instruments it invests in.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q3. What are the risks involved in debt funds?</p>
+        <p class="faq-answer">Debt Mutual Funds are subject to mainly credit risk and interest rate risk.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q4. Are debt funds better than equity funds?</p>
+        <p class="faq-answer">Usually, debt mutual funds are less risky than equity funds, but their respective performance depends on market conditions.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q5. Are debt funds more secure than FDs?</p>
+        <p class="faq-answer">Debt mutual funds and fixed-income investments have various risk characteristics. While fixed-income investments are often considered safer due to their fixed interest and deposit protection, debt funds do contain some risk due to credit risk and interest rate risk.</p>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2>3.Hybrid Funds - FAQs</h2>
+    <div class="faq-item">
+        <p class="faq-question">Q1. What is a hybrid mutual fund?</p>
+        <p class="faq-answer">Hybrid mutual funds are funds that typically invest in many asset classes...</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q2. How does a hybrid fund work?</p>
+        <p class="faq-answer">These funds are a mixture of mutual funds...</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q3. Who can invest in a hybrid fund?</p>
+        <p class="faq-answer">These funds are a mixture of mutual funds...</p>
+        <p class="faq-answer">Investors who wish to balance their risk and reward ratio.</p>
+        <p class="faq-answer">Investors with a low or moderate risk appetite.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q4.What are the risks of investing in a hybrid fund?</p>
+        <p class="faq-answer">The investment risk of hybrid funds is proportional to the asset allocation in their portfolio.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q5. What are the main features of a hybrid fund?</p>
+        <p class="faq-answer">The major characteristics of a hybrid mutual fund are that - </p>
+        <p class="faq-answer">It is a diversified investment.</p>
+        <p class="faq-answer">It does not invest in one kind of assist.</p>
+     </div>
+</section>
+<section class="faq-section">
+    <h2>4.ELSS Fund - FAQs</h2>
+    <div class="faq-item">
+        <p class="faq-question">Q1. What is ELSS mutual funds meaning?</p>
+        <p class="faq-answer">ELSS mutual funds are classified as diversified equity mutual funds. This equity fund invests at a minimum of 80% of its assets in stock and equity-related securities, with a portion of its assets being invested in debt.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q2. Is ELSS risk-free?</p>
+        <p class="faq-answer">ELSS is the most popular tax-saving mutual fund. It is a mutual fund that invests largely in equities and equity-associated securities of companies with high development prospects.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q3. Can I draw out my ELSS after three years?</p>
+        <p class="faq-answer">Yes, investors can withdraw their assets from ELSS funds following a three-year lock-in period.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q4. Who should invest in ELSS funds?</p>
+        <p class="faq-answer">These funds are suitable for Salaried Individuals and First-time investors.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q5. What is the exposure for ELSS funds?</p>
+        <p class="faq-answer">ELSS invests a minimum of 80% of its funds in equities.</p>
+    </div>
+</section>
+<section class="faq-section">
+    <h2>5.Solution-Oriented Schemes</h2>
+    <p class="faq-question">✔ Retirement</p>
+    <p class="faq-question">✔ Marriage</p>
+    <p class="faq-question">✔ Children’s education</p>
+    <p class="faq-question">✔ Capital preservation and appreciation</p>
+    
+    <h3>Key Features:</h3>
+    <p class="faq-answer">🔹 <strong>Customized Portfolio</strong> – Fund managers design portfolios based on financial goals, expected returns, and risk appetite.</p>
+    <p class="faq-answer">🔹 <strong>Regulated by SEBI</strong> – The Securities and Exchange Board of India (SEBI) classifies mutual funds into five main types:</p>
+    <ul>
+        <li>Equity Funds</li>
+        <li>Debt Funds</li>
+        <li>Balanced Hybrid Portfolios</li>
+        <li>Solution-Oriented Funds</li>
+        <li>Others</li>
+    </ul>
+    <p class="faq-answer">🔹 <strong>Risk-Based Investment Choices</strong> – Investors can select funds based on their risk tolerance and long-term financial objectives.</p>
+</section>
+<div class="footer">
+    <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/about">About Us</a></li>
+    </ul>
+    <p>&copy; 2025 InvestSmart. All rights reserved.</p>
+</div>
+
+</body>
+</html>

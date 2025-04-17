@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Schemes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+        .scheme-category {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            background: #fff;
+            border-left: 3px solid #007bff;
+            margin-left: 10px;
+        }
+        .dropdown-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .dropdown-content li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .dropdown-content li:last-child {
+            border-bottom: none;
+        }
+    
+    .logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+.menu {
+   
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   font-size: 20px;
+   margin-left: 45px;
+}
+
+.menu ul {
+   margin: 10px 10px 0px 60px;
+   padding: 0;
+   list-style: 2;
+   display: flex;
+   justify-content: center;
+}
+
+.menu ul li {
+   display: inline;
+}
+
+.menu ul li a {
+   display: block;
+   padding: 18px 30px;
+   text-align: center;
+   text-decoration: underline;
+   color: rgb(255, 255, 255);
+   font-size: 30;
+
+}
+.smooth{
+    font-size: 25px;
+    margin-left: 450px;
+    
+}
+.form{
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: 10px;
+}
+.box{
+    padding: 20px;
+    font-size: 23px;
+    margin-left: 300px;
+}
+.box input{
+    width: 25%;
+    height: 20px;
+}
+.comb{
+    background-image: url('https://wallpapercave.com/wp/wp13492649.jpg');
+    background-size: 100%;
+    height: auto;
+    /* padding-bottom: 20px; */
+    filter: blur(20%);
+}
+.logo-container{
+    color:white;
+}
+.add input{
+    width: 60%;
+}
+.buttin {
+    background-color: transparent; /* Remove any background color */
+    color: rgb(255, 255, 255); /* Set the text color */
+    font-size: 22px; /* Font size of the button text */
+    padding: 5px; /* Add padding for better button appearance */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: none; /* Remove border radius */
+    font-weight: bold; /* Make the font bold */
+    text-decoration: underline;
+}
+
+/* Remove background color and text color change on hover */
+.buttin:hover {
+    color: black; /* Keep text color black on hover */
+    background-color: transparent; /* Ensure no background color change */
+}
+.stream{
+    position: relative;
+    left: 220px;
+}
+.footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .footer ul li {
+            margin: 0 15px;
+        }
+        .footer ul li a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+</style>
+<div class="comb">
+<div class="logo-container">
+    <img src="https://cdn-icons-png.flaticon.com/128/5501/5501360.png" width=3%  >
+    <h1>InvestSmart</h1>
+    </div>
+    
+    <div class="menu">
+        <B>
+        <ul>
+            <li><a href="/"><button class="buttin">HOME</button></a></li>
+            <li><a href="/invest"><button class="buttin">INVEST</button></a></li>
+            <li><a href="/scheme"><button class="buttin">SCHEMES</button></a></li>
+            <li><a href="/calculator"><button class="buttin">TOOLS AND CALCULATONS</button></a></li>
+        </ul>
+        </B>
+    </div>
+<div class="container">
+    <h1>Mutual Fund Schemes</h1>
+    
+    <div class="scheme-category" onclick="toggleDropdown('equity')">Equity Funds</div>
+    <div id="equity" class="dropdown-content">
+        <ul>
+            <li onclick="toggleDropdown('largeCap')">Large Cap Fund</li>
+            <div id="largeCap" class="dropdown-content"><a href="https://www.barodabnpparibasmf.in/mutual-fund-schemes/equity-funds/baroda-bnp-paribas-large-cap-fund/regular-growth">BARODA BNP PARIBAS LARGE CAP Fund</a><ul><a href="https://www.icicipruamc.com/mutual-fund/equity-funds/icici-prudential-bluechip-fund">ICICI Prudential Bluechip Fund</a></ul></div>
+            
+            
+            <li onclick="toggleDropdown('midCap')">Mid Cap Fund</li>
+            <div id="midCap" class="dropdown-content"><a href="https://www.motilaloswal.com/markets/mutual-funds-market-overview/INF247L01411/motilal-oswal-midcap-fund-regular-growth">Motilal Oswal Midcap Fund</a><ul><a href="https://www.kotakmf.com/mutual-funds/equity-funds/kotak-emerging-equity-fund/dir-g">Kotak Emerging Equity Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('smallCap')">Small Cap Fund</li>
+            <div id="smallCap" class="dropdown-content"><a href="https://www.sbimf.com/sbimf-scheme-details/sbi-small-cap-fund-329">SBI Small Cap Fund</a><ul><a href="https://www.tatamutualfund.com/mutual-funds/tata-small-cap-fund-direct-growth">Tata Small Cap Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('multiCap')">Multi Cap Fund</li>
+            <div id="multiCap" class="dropdown-content"><a href="https://www.mahindramanulife.com/mutual-fund-schemes/equity-schemes/multi-cap-fund">Mahindra Manulife Multi Cap Fund Direct Plan Growth</a><ul><a href="https://www.quantmutual.com/mutual-fund-schemes/quant-active-fund">Quant Active Fund Growth Option Direct Plan</a></ul></div>
+            
+            <li onclick="toggleDropdown('valueFund')">Value Fund</li>
+            <div id="valueFund" class="dropdown-content"><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-pure-value-fund">Aditya Birla SL Pure Value Fund</a><ul><a href="https://www.tatamutualfund.com/products/equity-funds/tata-equity-pe-fund">Tata Equity P/E Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('dividendYield')">Dividend Yield Fund</li>
+            <div id="dividendYield" class="dropdown-content"><a href="https://investor.vanguard.com/mutual-funds/profile/VDADX">Vanguard Dividend Appreciation Index VDADX</a><ul><a href="https://www.wisdomtree.com/investments/etfs/equity/des">WisdomTree U.S. SmallCap Dividend ETF DES</a></ul></div>
+        </ul>
+    </div>
+
+    <div class="scheme-category" onclick="toggleDropdown('debt')">Debt Funds</div>
+    <div id="debt" class="dropdown-content">
+        <ul>
+            <li onclick="toggleDropdown('liquidFund')">Liquid Fund</li>
+            <div id="liquidFund" class="dropdown-content"><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-liquid-fund">Aditya Birla Sun Life Liquid Fund Direct Growth</a><ul><a href="https://www.mahindramanulife.com/mutual-fund-schemes/debt-schemes/liquid-fund">Mahindra Manulife Liquid Fund - Direct Growth</a></ul></div>
+            
+            <li onclick="toggleDropdown('corporateBond')">Corporate Bond Fund</li>
+            <div id="corporateBond" class="dropdown-content"><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-corporate-bond-fund">Aditya Birla Sun Life Corporate Bond Fund</a><ul><a href="https://www.franklintempletonindia.com/investor/products/riskometer/3850/franklin-india-corporate-debt-fund-super-institutional-plan-direct">Franklin India Corporate Debt Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('giltFund')">Gilt Fund</li>
+            <div id="giltFund" class="dropdown-content"><a href="https://mf.nipponindiaim.com/funds-information/individual-funds/gilt-securities-fund">Nippon India Gilt Securities Fund</a><ul><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-government-securities-fund">Aditya Birla Sun Life Government Securities Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('creditRisk')">Credit Risk Fund</li>
+            <div id="creditRisk" class="dropdown-content"><a href="https://www.sbimf.com/en-us/mutual-fund-schemes/debt-schemes/sbi-credit-risk-fund">SBI Credit Risk Fund - Direct Growth</a><ul><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-credit-risk-fund">Aditya Birla SL Credit Risk Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('ultraShort')">Ultra Short Duration Fund</li>
+            <div id="ultraShort" class="dropdown-content"><a href="https://mf.nipponindiaim.com/funds-information/individual-funds/ultra-short-duration-fund">Nippon India Ultra Short Duration Fund Direct Growth</a><ul><a href="https://www.tatamutualfund.com/mutual-funds/tata-ultra-short-term-fund-direct-growth">tata mutual short duration fund</a></ul></div>
+        </ul>
+    </div>
+
+    <div class="scheme-category" onclick="toggleDropdown('hybrid')">Hybrid Funds</div>
+    <div id="hybrid" class="dropdown-content">
+        <ul>
+            <li onclick="toggleDropdown('balancedAdvantage')">Balanced Advantage Fund</li>
+            <div id="balancedAdvantage" class="dropdown-content"><a href="https://www.hdfcfund.com/mutual-fund-products/hybrid-schemes/hdfc-balanced-advantage-fund">HDFC Balanced Advantage Fund</a><ul><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-balanced-advantage-fund">Aditya Birla SL Balanced Advantage Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('aggressiveHybrid')">Aggressive Hybrid Fund</li>
+            <div id="aggressiveHybrid" class="dropdown-content"><a href="https://www.icicipruamc.com/mutual-fund-schemes/hybrid/icici-prudential-equity-and-debt-fund">ICICI Prudential Equity & Debt Fund Direct Growth</a><ul><a href="https://www.kotakmf.com/funds/kotak-equity-hybrid">Kotak Equity Hybrid Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('multiAsset')">Multi Asset Allocation Fund</li>
+            <div id="multiAsset" class="dropdown-content"><a href="https://www.kotakmf.com/funds/kotak-multi-asset-allocation-fund">Kotak Multi Asset Allocation Fund</a><ul><a href="https://www.tatamutualfund.com/products/hybrid-funds/tata-multi-asset-opportunities-fund">Tata Multi Asset Opportunities Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('conservativeHybrid')">Conservative Hybrid Fund</li>
+            <div id="conservativeHybrid" class="dropdown-content"><a href="https://www.sbimf.com/en-us/mutual-fund-schemes/hybrid-schemes/sbi-conservative-hybrid-fund">SBI Conservative Hybrid Fund</a><ul><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-regular-savings-fund">Aditya Birla Sun Life Regular Savings Fund</a></ul></div>
+        </ul>
+    </div>
+
+    <div class="scheme-category" onclick="toggleDropdown('sectoral')">Sectoral & Thematic Funds</div>
+    <div id="sectoral" class="dropdown-content">
+        <ul>
+            <li onclick="toggleDropdown('technology')">Technology Fund</li>
+            <div id="technology" class="dropdown-content"><a href="https://www.franklintempletonindia.com/investor/products/riskometer/3851/franklin-india-technology-fund">Franklin India Technology Fund</a><ul><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-digital-india-fund">Aditya Birla Sun Life Digital India Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('pharma')">Pharma Fund</li>
+            <div id="pharma" class="dropdown-content"><a href="https://www.tatamutualfund.com/products/equity-funds/tata-india-pharma-and-healthcare-fund">Tata India Pharma & HealthCare Fund</a><ul><a href="https://mutualfund.adityabirlacapital.com/funds/aditya-birla-sun-life-pharma-healthcare-fund">Aditya Birla Sun Life Pharma & Healthcare Fund</a></ul></div>
+            
+            <li onclick="toggleDropdown('banking')">Banking & Financial Services Fund</li>
+            <div id="banking" class="dropdown-content"><a href="https://www.idbimutual.co.in/scheme-idbi-banking-and-financial-services-fund">IDBI Banking & Financial Services Fund</a><ul><a href="https://www.tatamutualfund.com/products/equity-funds/tata-banking-and-financial-services-fund">Tata Banking and Financial Services Fund</a></ul></div>
+        </ul>
+    </div>
+</div>
+<a href="/visual"><button>best visualization of scheme use by investor</button></a>
+<script>
+    function toggleDropdown(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+<div class="footer">
+    <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/about">About Us</a></li>
+    </ul>
+    <p>&copy; 2025 InvestSmart. All rights reserved.</p>
+</div>
+</body>
+</html>

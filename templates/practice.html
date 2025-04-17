@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund and Portfolio management</title>
+    
+</head>
+<style>
+    .buttin {
+    background-color: transparent; 
+    color: black; /* Set the text color */
+    font-size: 30px; /* Font size of the button text */
+    padding: 5px; /* Add padding for better button appearance */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: none; /* Remove border radius */
+    font-weight: bold; /* Make the font bold */
+    text-decoration: underline;
+}
+
+/* Remove background color and text color change on hover */
+.buttin:hover {
+    color: black; /* Keep text color black on hover */
+    background-color: transparent; /* Ensure no background color change */
+
+}
+body  {
+            background-image: url('https://ralainvestments.com/wp-content/uploads/2020/01/Shutterstock-365284043-470963-e1580235632282.png');
+            background-size: 100%;
+            filter: blur(20%);
+        }
+.menu {
+   
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    font-size: 30px;
+    margin-left: 45px;
+}
+
+.menu ul {
+    margin: 10px 10px 0px 60px;
+    padding: 0;
+    list-style: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 18px 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-size: 30;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #f8f9fa;
+    box-shadow: 0 2px 5px blueviolet; */
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}  
+a {
+    pointer-events: auto;
+    display: block;
+    z-index: 1; /* Set to a positive value */
+    position: relative;
+}
+
+h1{
+    font-size: 50px;
+    color: beige;
+
+}
+/* .logo-container { */
+    /* position: relative; */
+    /* display: inline-block; */
+/* } */
+
+/* .logo-container img {
+    vertical-align: center;
+} */
+
+/* .logo-container .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+} */
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+.adv{
+     margin: 150px 80px 300px 600px;
+     color: black;
+     font-size: 55px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    align-items: center;
+}
+.help{
+    position: fixed;
+    bottom: 36px;
+    right: 120px;
+    align-items: center;
+    justify-content: center;
+
+}
+.what{
+    margin-left: 9px;
+}
+.suport{
+    position: fixed;
+    margin-right: 15px;
+
+}
+.join{
+    font-size: 30px;
+    
+}
+.welcome-message{
+    color: black;
+    font-size: 20px;
+}
+
+.footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .footer ul li {
+            margin: 0 15px;
+        }
+        .footer ul li a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+</style>
+<body>
+    <div class="back">
+    <div class="logo-container">
+    <img src="https://cdn-icons-png.flaticon.com/128/5501/5501360.png" width=3%  >
+    <h1>InvestSmart</h1>
+    </div>
+
+    <div class="menu">
+        <B>
+        <ul>
+            <li><a href="/"><button class="buttin">HOME</button></a></li>
+            <li><a href="/invest"><button class="buttin">INVEST</button></a></li>
+            <li><a href="/scheme"><button class="buttin">SCHEMES</button></a></li>
+            <li><a href="/calculator"><button class="buttin">CALCULATOR</button></a></li>
+           
+        </ul>
+        </B>
+    </div>
+    <div class="navbar">
+        <a href="/container" ><button class="login-btn">Register Now</button></a>
+     </div>
+    </div>
+    <div class="adv">
+        "Small steps, big dreams – <br>
+        Start your mutual fund journey now."
+        <div class="join"><a href="/container.html">click here</a></div>
+    </div>
+    
+   
+    
+    <div class="whatsapp">
+        <a href="https://wa.me/7769072636"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="40%">
+        </a>
+        <div class="what">chat</div>
+    </div>
+   <div class="help">
+        <img src="https://cdn-icons-png.flaticon.com/128/1634/1634540.png" width="40%">
+        <a href="/help"> <div class="suport">help & support</div></a>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+        <p>&copy; 2025 InvestSmart. All rights reserved.</p>
+    </div>
+</body>
+</html>

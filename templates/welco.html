@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+<style>
+    .logo-container {
+        display: flex;
+        align-items: center; /* Align items vertically in the center */
+    }
+    .menu {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        font-size: 20px;
+        margin-left: 45px;
+    }
+    .menu ul {
+        margin: 10px 10px 0px 60px;
+        padding: 0;
+        list-style: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .menu ul li {
+        display: inline;
+    }
+    .menu ul li a {
+        display: block;
+        padding: 18px 30px;
+        text-align: center;
+        text-decoration: underline;
+        color: black;
+        font-size: 30px;
+    }
+    .smooth {
+        font-size: 25px;
+        margin-left: 450px;
+    }
+    .form {
+        font-size: 20px;
+        margin-left: 390px;
+        margin-top: 10px;
+    }
+    .box {
+        padding: 20px;
+        font-size: 23px;
+        margin-left: 300px;
+    }
+    .box input {
+        width: 25%;
+        height: 20px;
+        margin-bottom: 10px; /* Adds space below each input */
+    }
+    .comb {
+        background-image: url('https://ralainvestments.com/wp-content/uploads/2020/01/Shutterstock-365284043-470963-e1580235632282.png');
+    }
+    .logo-container {
+        color: white;
+    }
+    /* Additional margin for space between firstname and lastname input */
+    .box input[type="text"]:nth-child(1) {
+        margin-right: 10px; /* Adds space between the first and second input */
+    }
+    /* Add margin below the "Age" input to space it from the "Income" input */
+    .box input[type="number"]:nth-child(3) {
+        margin-bottom: 30px; /* Adds space between Age and Income */
+    }
+</style>
+<div class="comb">
+    <div class="logo-container">
+        <img src="https://cdn-icons-png.flaticon.com/128/5501/5501360.png" width="3%">
+        <h1>InvestSmart</h1>
+    </div>
+    
+    <div class="menu">
+        <B>
+        <ul>
+            <li><a href="/practice">HOME</a></li>
+            <li><a href="">INVEST</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">TOOLS AND CALCULATIONS</a></li>
+        </ul>
+        </B>
+    </div>
+</div><br>
+<div class="smooth">To invest smoothly, safely, and smartly</div>
+<div class="form">Fill the form for best suggestion to invest according to income.</div><br>
+<form class="box">
+    Name: <input type="text" placeholder="Firstname">
+    Surname: <input type="text" placeholder="Lastname"><br><br>
+    Age: <input type="number" placeholder="Age">
+    Income: <input type="number" placeholder="Income">
+</form>
+
+</body>
+</html>

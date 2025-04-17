@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    
+    <style>
+        .logo-container {
+        display: flex;
+        align-items: center; /* Align items vertically in the center */
+    }
+    .menu {
+       
+       overflow: hidden;
+       position: absolute;
+       width: 100%;
+       top: 0;
+       font-size: 20px;
+       margin-left: 45px;
+    }
+    
+    .menu ul {
+       margin: 10px 10px 0px 60px;
+       padding: 0;
+       list-style: 2;
+       display: flex;
+       justify-content: center;
+    }
+    
+    .menu ul li {
+       display: inline;
+    }
+    
+    .menu ul li a {
+       display: block;
+       padding: 18px 30px;
+       text-align: center;
+       text-decoration: underline;
+       color: black;
+       font-size: 30;
+    
+    }
+    .smooth{
+        font-size: 25px;
+        margin-left: 450px;
+        
+    }
+    .form{
+        font-size: 20px;
+        margin-left: 390px;
+        margin-top: 10px;
+    }
+    .box{
+        padding: 20px;
+        font-size: 23px;
+        margin-left: 300px;
+    }
+    .box input{
+        width: 25%;
+        height: 20px;
+    }
+    .comb{
+        background-image: url('https://ralainvestments.com/wp-content/uploads/2020/01/Shutterstock-365284043-470963-e1580235632282.png');
+    }
+    .logo-container{
+        color:white;
+    }
+    .add input{
+        width: 60%;
+    }
+    .buttin {
+        background-color: transparent; /* Remove any background color */
+        color: black; /* Set the text color */
+        font-size: 22px; /* Font size of the button text */
+        padding: 5px; /* Add padding for better button appearance */
+        border: none; /* No border */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: none; /* Remove border radius */
+        font-weight: bold; /* Make the font bold */
+        text-decoration: underline;
+    }
+    
+    /* Remove background color and text color change on hover */
+    .buttin:hover {
+        color: black; /* Keep text color black on hover */
+        background-color: transparent; /* Ensure no background color change */
+    }
+    .calculate{
+        display: flex;
+        justify-content: center; 
+        text-align: center;
+        font-size: 25px;
+    }
+    .calculator {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        font-size: 25px;
+        height: 200px;
+    }
+    
+    .calculators {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: transform 0.3s;
+        background-color: white;
+        padding: 10px;
+        transition: all 1s ease-in 0.25;
+        color: black;
+        text-decoration:all 1s ease-in 0.25 ;
+    }
+    .calculators:hover{
+        transform:scale(1.05);
+    }
+    #calci{
+        background-color:rgb(252, 117, 39);
+    }
+    .button{
+        background-color: rgb(252,117,39);
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        border: 0px;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .hello{
+        justify-content: center;
+        justify-items: center;
+    }
+    .why-choose-us {
+            background-color: #f4f4f4;
+            padding: 30px;
+            text-align: center;
+        }
+        .why-choose-us h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .why-choose-us p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .footer ul li {
+            margin: 0 15px;
+        }
+        .footer ul li a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .calculator {
+                grid-template-columns: 1fr;
+            }
+        }
+        .fund{
+            text-align: center;
+        }
+    </style>
+<div class="comb">
+<div class="logo-container">
+    <img src="https://cdn-icons-png.flaticon.com/128/5501/5501360.png" width=3%  >
+    <h1>InvestSmart</h1>
+</div>
+    
+    <div class="menu">
+        <b>
+        <ul>
+            <li><a href="/"><button class="buttin">HOME</button></a></li>
+            <li><a href="/invest"><button class="buttin">INVEST</button></a></li>
+            <li><a href="/scheme"><button class="buttin">SCHEMES</button></a></li>
+            <li><a href="/calculator"><button class="buttin">TOOLS AND CALCULATIONS</button></a></li>
+        </ul>
+        </b>
+    </div>
+</div><br>
+<div class="calculate"> Calculate The Return Funds According to Funds<br> Invest In Schemes</div><br>
+
+<section id="calci" class="calculator">
+
+    <a href="/FUNDS">
+<div class="calculators">
+    <b><div>SIP CALCULATOR </div></b><br>
+    <div> Determine the expected return and total wealth<br> accumulated on the amount.</div><br>
+    <!-- <div class="hello"><button class="button">CALCULATE</button></div> -->
+</div></a>
+<a href="/FUNDS">
+<div class="calculators">
+    <b><div>LUMP CALCULATOR</div></b><br>
+    <div>Plan your investments with our easy-to-use Mutual<br> Fund Lumpsum Calculator.</div><br>
+    <!-- <div class="hello"><button class="button">CALCULATE</button></div> -->
+</div></a>
+<a href="/FUNDS">
+<div class="calculators">
+    <b><div>SWP CALCULATOR</div></b><br>
+    <div>With the help of our online SWP calculator, you <br>can find out the final value of your investment.</div><br>
+    <!-- <div class="hello"><button class="button">CALCULATE</button></div> -->
+</div></a>
+</section>
+<div class="fund">
+<!-- SIP Calculator Information Section -->
+<div class="why-choose-us">
+    <h2>SIP Calculator – Systematic Investment Plan Calculator</h2>
+    <p>A SIP calculator is a tool that helps determine the returns on investments in mutual funds. SIPs allow investing fixed sums at regular intervals.</p>
+    <h3>How SIP Calculator Works?</h3>
+    <p>It calculates the maturity amount based on the formula: <br><b>M = P × ({[1 + i]^n – 1} / i) × (1 + i)</b></p>
+    <p>For example, investing Rs. 1,000 per month for 12 months at 12% annual interest results in approximately Rs. 12,809.</p>
+    <h3>Benefits of SIP Calculator</h3>
+    <ul>
+        <li>Helps determine the amount to invest.</li>
+        <li>Shows total investment value.</li>
+        <li>Provides estimated returns.</li>
+    </ul>
+</div>
+
+
+<!-- Lumpsum Calculator Information -->
+<div class="lumpsum-info">
+    <h1>Lump Calculator</h1>
+    <p>A lump investment is when the depositor invests a significant sum of money in a particular mutual fund scheme.</p>
+    <h3>How Lump Calculator Works?</h3>
+    <p>The formula is as follows:</p>
+    <p><strong>A = P (1 + r/n) ^ nt</strong></p>
+    <p>For example, imagine investing Rs. 15 Lakh in a fund with a 12% return for a 5-year period compounding every 6 months, resulting in approximately Rs. 26,43,513.</p>
+    <h3>Benefits of SIP Calculator</h3>
+    <ul>
+        <li>Provides close return estimates despite market risks, helping in better financial planning.</li>
+        <li>An online tool accessible anytime, eliminating manual effort and saving time.</li>
+        <li>Ensures accurate calculations, reducing errors in investment planning.</li>
+    </ul>
+<!-- SWP Calculator Information -->
+<div class="swp-info">
+    <h1>SWP (Systematic Withdrawal Plan) Calculator</h1>
+    <p>Under SWP, if you invest a lump sum in a mutual fund, you can set an amount you’ll withdraw regularly and the frequency at which you’ll withdraw.</p>
+    <h3>How SWP Calculator Works?</h3>
+    <p>Here, an individual has invested Rs. 50,000 for a tenure of 1 year along with a systematic withdrawal of Rs. 1,000 per month. The interest rate stands at 10%.</p>
+    <p>As such, the total return of investments after the end of the tenure stands at Rs. 4,565.</p>
+</div>
+
+<!-- SWP Calculator Benefits -->
+<div class="swp-benefits">
+    <h2>Benefits of SWP Calculator</h2>
+    <ul>
+        <li>An SWP provides a regular monthly income while generating returns on the total investment.</li>
+        <li>No expertise is required—just enter the details, and the calculator provides instant results.</li>
+        <li>Available online, allowing users to plan withdrawals anytime, anywhere.</li>
+    </ul>
+</div>
+</div>
+<br>
+<div class="why-choose-us">
+    <h2>Why Choose InvestSmart?</h2>
+    <p>At InvestSmart, we provide expert advice, easy-to-use tools, and tailored investment plans to help you grow your wealth. Whether you're new to investing or a seasoned pro, our platform offers funds to match your financial goals.</p>
+</div>
+
+<!-- Contact Us Section -->
+
+
+<!-- Footer -->
+<div class="footer">
+    <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/about">About Us</a></li>
+    </ul>
+    <p>&copy; 2025 InvestSmart. All rights reserved.</p>
+</div>
+</body>
+</html>
